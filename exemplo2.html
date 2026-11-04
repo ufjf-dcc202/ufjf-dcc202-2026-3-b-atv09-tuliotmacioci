@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            border: 1px solid brown;
+            background-color: burlywood;
+            padding: 0.5em;
+        }
+
+        .desconstructed-pancake {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .desconstructed-pancake > * {
+            /*
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 100px;
+            */
+            flex: 1 1 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Exemplo 2: desconstructed-pancake</h1>
+        <article>
+            <ul class="desconstructed-pancake">
+                <li>Primeiro</li>
+                <li>Segundo</li>
+                <li>Terceiro</li>
+                <li>Quarto</li>
+                <li>Quinto</li>
+            </ul>
+        </article>
+    </main>
+</body>
+</html>
