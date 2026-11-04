@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 4</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        header, footer {
+            background-color: yellowgreen;
+        }
+
+        section {
+            background-color: black;
+            color: white;
+        }
+
+        .pancake-stack {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        .pancake-stack > section {
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article class="pancake-stack">
+            <header>
+                <h1>Exemplo 4: pancake-stack</h1>
+            </header>
+            <section>
+                <h2>Texto</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quas quaerat, ab error repellendus sint dolores explicabo in quod eveniet. Quis at unde, mollitia quo ipsum fuga vitae eius ipsa.</p>
+                <p>Natus sed qui debitis corporis aperiam nisi quia eveniet consequuntur eius quibusdam veritatis iste soluta odit, ipsum cumque aliquam omnis ipsam magni eos aspernatur veniam voluptate. Ipsam a deleniti possimus?</p>
+                <p>Saepe non, quibusdam amet pariatur architecto perferendis sint vel quisquam inventore quis alias quaerat voluptatem, ratione eligendi, hic eos ut id! Obcaecati soluta optio eaque ad consequatur enim autem voluptatem.</p>
+            </section>
+            <footer>
+                &COPY; 2026 - Túlio
+            </footer>
+        </article>
+    </main>
+</body>
+</html>
